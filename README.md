@@ -1,9 +1,9 @@
 # Atomic Blog
 
-## Descrição do Projeto
-Atomic Blog é uma aplicação web moderna desenvolvida com React 19 e Tailwind CSS 4. Este projeto demonstra uma arquitetura escalável usando princípios de design atômico para componentes de interface do usuário.
+## Project Description
+Atomic Blog is a modern web application developed with React 19 and Tailwind CSS 4. This project demonstrates a scalable architecture using atomic design principles for user interface components.
 
-## Tecnologias Utilizadas
+## Technologies Used
 - React 19
 - TypeScript
 - Vite
@@ -11,47 +11,47 @@ Atomic Blog é uma aplicação web moderna desenvolvida com React 19 e Tailwind 
 - ESLint
 - Prettier
 
-## Requisitos
-- Node.js (versão 18 ou superior)
-- npm ou yarn
+## Requirements
+- Node.js (version 18 or higher)
+- npm or yarn
 
-## Instalação
+## Installation
 
-Clone o repositório:
+Clone the repository:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone [REPOSITORY_URL]
 cd atomic-blog
 ```
 
-Instale as dependências:
+Install dependencies:
 ```bash
 npm install
-# ou
+# or
 yarn
 ```
 
-## Scripts Disponíveis
+## Available Scripts
 
-No diretório do projeto, você pode executar:
+In the project directory, you can run:
 
 ### `npm run dev`
 
-Executa o aplicativo no modo de desenvolvimento.
-Abra [http://localhost:5173](http://localhost:5173) para visualizá-lo no navegador.
+Runs the app in development mode.
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ### `npm run build`
 
-Compila o TypeScript e constrói o aplicativo para produção na pasta `dist`.
+Compiles TypeScript and builds the app for production to the `dist` folder.
 
 ### `npm run lint`
 
-Executa a verificação de linting em todo o código.
+Runs linting checks on all code.
 
 ### `npm run preview`
 
-Serve os arquivos de build localmente para pré-visualização.
+Serves the build files locally for preview.
 
-## Estrutura do Projeto
+## Project Structure
 ```
 atomic-blog/
 ├── public/
@@ -70,15 +70,15 @@ atomic-blog/
 └── ...
 ```
 
-## Padrões de Código
-Este projeto segue os padrões de código definidos pelo ESLint e Prettier configurados.
+## Code Standards
+This project follows code standards defined by the configured ESLint and Prettier.
 
-## Contribuição
-1. Fork o projeto
-2. Crie sua Feature Branch (`git checkout -b feature/MinhaFeature`)
-3. Commit suas alterações (`git commit -m 'Adiciona minha feature'`)
-4. Push para a Branch (`git push origin feature/MinhaFeature`)
-5. Abra um Pull Request
+## Contribution
+1. Fork the project
+2. Create your Feature Branch (`git checkout -b feature/MyFeature`)
+3. Commit your changes (`git commit -m 'Add my feature'`)
+4. Push to the Branch (`git push origin feature/MyFeature`)
+5. Open a Pull Request
 
-## Licença
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.md para detalhes.
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
