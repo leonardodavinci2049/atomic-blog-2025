@@ -1,9 +1,16 @@
-import { createContext, useMemo, useState } from "react";
+import { ReactNode, createContext, useMemo, useState } from "react";
 import createRandomPost from "../core/createRandomPost";
-import { ReactNode } from "react";
 
 // 1) CREATE A CONTEXT
-const PostContext = createContext({
+interface PostContextType {
+  posts: ReturnType<typeof createRandomPost>[];
+  onAddPost: (post: ReturnType<typeof createRandomPost>) => void;
+  onClearPosts: () => void;
+  searchQuery: string;
+  setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const PostContext = createContext<PostContextType>({
   posts: [],
   onAddPost: () => {},
   onClearPosts: () => {},
@@ -11,11 +18,9 @@ const PostContext = createContext({
   setSearchQuery: () => {},
 });
 
-
-
 function PostProvider({ children }: { children: ReactNode }) {
   const [posts, setPosts] = useState(() =>
-    Array.from({ length: 30 }, () => createRandomPost())
+    Array.from({ length: 30 }, () => createRandomPost()),
   );
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -25,11 +30,11 @@ function PostProvider({ children }: { children: ReactNode }) {
       ? posts.filter((post) =>
           `${post.title} ${post.body}`
             .toLowerCase()
-            .includes(searchQuery.toLowerCase())
+            .includes(searchQuery.toLowerCase()),
         )
       : posts;
 
-  function handleAddPost(post) {
+  function handleAddPost(post: ReturnType<typeof createRandomPost>) {
     setPosts((posts) => [post, ...posts]);
   }
 
@@ -55,6 +60,6 @@ function PostProvider({ children }: { children: ReactNode }) {
   // Whenever `isFakeDark` changes, we toggle the `fake-dark-mode` class on the HTML element (see in "Elements" dev tool).
 }
 
-
-
 export { PostProvider, PostContext };
+export default PostContext;
+// 3) USE THE CONTEXT IN YOUR COMPONENTS
