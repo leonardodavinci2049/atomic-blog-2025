@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { PostProvider } from "../context/PostContext";
+
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Archive from "./components/Archive";
 import Footer from "./components/Footer";
+import { PostProvider } from "../context/PostProvider";
 
 const HomePage = () => {
 
