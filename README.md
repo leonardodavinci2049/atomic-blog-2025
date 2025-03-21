@@ -35,7 +35,7 @@ Antes de começar, você precisa ter instalado:
 
 ```sh
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone https://github.com/leonardodavinci2049/atomic-blog-2025
 
 # 2. Acesse a pasta do projeto
 cd nome-do-projeto
@@ -88,7 +88,7 @@ Quer contribuir? Siga estas etapas:
 ## 💬 Contato
 
 💬 Contato  
-📧 E-mail: seuemail@email.com  
+📧 E-mail: leonardodavinci2049@gmail.com
 🐦 Twitter: @seu_usuario  
 📜 LinkedIn: Seu Nome  
 
