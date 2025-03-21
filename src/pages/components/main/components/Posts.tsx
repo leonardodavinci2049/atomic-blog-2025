@@ -3,7 +3,7 @@ import List from "./List"
 
 const Posts = () => {
   return (
-    <section>
+    <section className="max-w-[1140px] mx-auto">
     <List />
   </section>
   )

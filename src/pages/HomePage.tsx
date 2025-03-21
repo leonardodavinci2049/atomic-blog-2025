@@ -17,7 +17,7 @@ const HomePage = () => {
   );
 
   return (
-    <section>
+<section className="max-w-[1140px] mx-auto">
       <button
         onClick={() => setIsFakeDark((isFakeDark) => !isFakeDark)}
         className="btn-fake-dark-mode"

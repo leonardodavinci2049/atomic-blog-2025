@@ -4,7 +4,7 @@ import Posts from "./components/Posts";
 
 const Main = () => {
   return (
-    <main>
+    <main className="mb-10">
       <FormAddPost />
       <Posts />
     </main>
